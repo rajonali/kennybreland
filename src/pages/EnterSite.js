@@ -55,10 +55,9 @@ class EnterSite extends Component {
             
             <div style={{color:'white', paddingTop:'15%', fontFamily:'Montserrat', fontSize:'20px',  textShadow: '-1px 1px 10px rgba(255, 255, 255, 1)'}}><strong>
             </strong></div>
-            <h1 style={{fontFamily:'bebas neue', color:'#d9534f', fontSize:30, marginTop:10}}>p h o t o g r  a p h e r</h1>
+            <h1 style={{fontFamily:'bebas neue', color:'#d9534f', fontSize:30, marginTop:10}}>p h o t o g r a p h e r</h1>
 
 <pre><h1 style={{color:'white', fontFamily:'Permanent Marker', fontSize:'50px'}}>      K E N N Y • B R E L A N D</h1></pre>
-            
             <center style={{paddingTop:'10px'}}>
             <h5 style={{width:'200px', padding:'10px', borderStyle: 'solid', borderWidth:"1px", borderColor:'#FFF', fontFamily:'Montserrat', textShadow: '-1px 1px 10px rgba(0, 0, 0, 1)', }}><strong style={{margin:'1px'}}><Link style={{textDecoration: 'none', color:'#FFF'}} to="/home"><strong>E N T E R</strong></Link></strong></h5>
             </center>

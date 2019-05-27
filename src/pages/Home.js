@@ -82,10 +82,11 @@ class Home extends Component {
 
         <Row>
           <Col xl="2" style={{backgroundColor:'black', flex:1, flexDirection:'column', alignItems:'center', 'justifyContent':'center'}}>
-          
-<div style={{marginTop:'40%',paddingLeft:'30px'}}>
-<h1 style={{textAlign: 'left', fontSize:'65px', color:'white', fontFamily:'bebas neue'}}>Kenny<br />Breland</h1>
 
+<div style={{marginTop:"40%", width:240, height:370, paddingLeft:"20px",}}>
+<div style={{borderWidth:5,borderColor:'white'}}>
+<h1 style={{ textAlign: 'left', fontSize:'65px', color:'white', fontFamily:'bebas neue'}}>Kenny Breland</h1>
+</div>
 
 <div class="links" style={{textAlign: 'left', marginTop:'50px', fontFamily:'Helvetica'}}>
 <a href="" style={{color:'white'}}>WORK</a><br/>
@@ -97,7 +98,7 @@ class Home extends Component {
 
 
 </div>
-<div style={{marginTop:'300px', textAlign:'center'}}>
+<div style={{marginTop:'280px',textAlign:'center'}}>
             <i style={{color:"white", size:'10px', paddingRight:30}} class="fab fa-facebook fa-2x"></i>
             <i style={{color:"white", size:'10px', paddingRight:30}} class="fab fa-twitter fa-2x"></i>
             <i style={{color:"white", size:'10px', paddingRight:30}} class="fab fa-instagram fa-2x"></i>
@@ -108,7 +109,7 @@ class Home extends Component {
 
           </Col>
 
-          <Col xl="10" style={{backgroundColor:'white', height:'100vh'}}>
+          <Col xl="10" style={{backgroundColor:'white', height:'1000vh'}}>
           <div style={{margin: '15px 15px 15px 0px'}}>
           <Gallery photos={photos} />
           <Gallery photos={photos2} />
