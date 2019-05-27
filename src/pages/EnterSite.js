@@ -60,7 +60,7 @@ class EnterSite extends Component {
 <pre><h1 style={{color:'white', fontFamily:'Permanent Marker', fontSize:'50px'}}>      K E N N Y • B R E L A N D</h1></pre>
             
             <center style={{paddingTop:'10px'}}>
-            <h5 style={{width:'300px', padding:'10px', borderStyle: 'solid', borderWidth:"1px", borderColor:'#d9534f', fontFamily:'Montserrat', textShadow: '-1px 1px 10px rgba(0, 0, 0, 1)', }}><strong style={{margin:'1px'}}><Link style={{textDecoration: 'none', color:'#d9534f'}} to="/home"><strong>E N T E R</strong></Link></strong></h5>
+            <h5 style={{width:'200px', padding:'10px', borderStyle: 'solid', borderWidth:"1px", borderColor:'#FFF', fontFamily:'Montserrat', textShadow: '-1px 1px 10px rgba(0, 0, 0, 1)', }}><strong style={{margin:'1px'}}><Link style={{textDecoration: 'none', color:'#FFF'}} to="/home"><strong>E N T E R</strong></Link></strong></h5>
             </center>
             <div style={{paddingTop:'17%'}}>
             <i style={{color:"#d9534f", size:'10px', padding:10}} class="fab fa-facebook-square fa-2x"></i>
