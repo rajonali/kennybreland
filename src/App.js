@@ -19,21 +19,8 @@ function homePage() {
 function App() {
   return (
     <Router>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Entersite</Link>
-          </li>
-          <li>
-            <Link to="/home">Home</Link>
-          </li>
-        </ul>
-      </nav>
-
       <Route path="/" exact component={entersitePage} />
       <Route path="/home" component={homePage} />
-    </div>
   </Router>
 
   );
