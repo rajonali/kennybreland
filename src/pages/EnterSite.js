@@ -24,10 +24,12 @@ import BackgroundSlider from 'react-background-slider'
 var sectionStyle = {
     backgroundRepeat: 'no-repeat',
     backgroundImage: `url(${Background})`,
-    backgroundSize: 'cover',
+    backgroundSize: 'stretch',
     overflow: 'hidden',
-    height: window.innerHeight,
-    width: window.innerWidth
+    flex:1,
+    display:'flex',
+    height: '100%',
+    width: '100%'
 };
 
 
@@ -53,26 +55,13 @@ class EnterSite extends Component {
     render() {
         return (
             <div>
-                <link
-                    rel="stylesheet"
-                    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-                    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-                    crossorigin="anonymous"/>
-                <link
-                    rel="stylesheet"
-                    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-                    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-                    crossorigin="anonymous"/>
-                <link
-                    href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300"
-                    rel="stylesheet"/>
-                <link
-                    href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
-                    rel="stylesheet"/>
 
                 <div
                     style={{
                     flex: 1,
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center',
                     textAlign: 'center',
                     height: this.state.height
                 }}
@@ -95,7 +84,7 @@ class EnterSite extends Component {
                             </div>
                             <h1
                                 style={{
-                                fontFamily: 'bebas neue',
+                                fontFamily: 'Bebas Neue',
                                 color: '#d9534f',
                                 fontSize: 30,
                                 marginTop: 10
@@ -105,7 +94,7 @@ class EnterSite extends Component {
             <center style={{paddingTop:'10px'}}>
             <h5 style={{width:'200px', padding:'10px', borderStyle: 'solid', borderWidth:"1px", borderColor:'#FFF', fontFamily:'Montserrat', textShadow: '-1px 1px 10px rgba(0, 0, 0, 1)', }}><strong style={{margin:'1px'}}><Link style={{textDecoration: 'none', color:'#FFF'}} to="/home"><strong>E N T E R</strong></Link></strong></h5>
             </center>
-            <div style={{paddingTop:'17%'}}>
+            <div style={{paddingTop:'40%'}}>
             <i style={{color:"#d9534f", size:'10px', padding:10}} class="fab fa-facebook-square fa-2x"></i>
             <i style={{color:"#d9534f", size:'10px', padding:10}} class="fab fa-twitter-square fa-2x"></i>
             <i style={{color:"#d9534f", size:'10px', padding:10}} class="fab fa-instagram fa-2x"></i>

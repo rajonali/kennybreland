@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
 import './Home.css';
-
+import { Container, Row, Col } from 'reactstrap';
+import Sidebar from '../components/sidebar';
 import Gallery from 'react-photo-gallery';
 import {StickyContainer, Sticky} from 'react-sticky';
 
@@ -78,45 +78,17 @@ class Home extends Component {
 <body>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet" />
-
-
-        <Row>
-          <Col xl="2" style={{backgroundColor:'black', flex:1, flexDirection:'column', alignItems:'center', 'justifyContent':'center'}}>
-
-<div style={{marginTop:"40%", width:240, height:370, paddingLeft:"20px",}}>
-<div style={{borderWidth:5,borderColor:'white'}}>
-<h1 style={{ textAlign: 'left', fontSize:'65px', color:'white', fontFamily:'bebas neue'}}>Kenny Breland</h1>
-</div>
-
-<div class="links" style={{textAlign: 'left', marginTop:'50px', fontFamily:'Helvetica'}}>
-<a href="" style={{color:'white'}}>WORK</a><br/>
-<a href="" style={{color:'white'}}>TRAVEL</a><br/>
-<a href="" style={{color:'white'}}>PORTRAITS</a><br/>
-<br />
-<a href="" style={{color:'white'}}>CONTACT</a><br/>
-<a href="" style={{color:'white'}}>BIO</a><br/>
-
-
-</div>
-<div style={{marginTop:'280px',textAlign:'center'}}>
-            <i style={{color:"white", size:'10px', paddingRight:30}} class="fab fa-facebook fa-2x"></i>
-            <i style={{color:"white", size:'10px', paddingRight:30}} class="fab fa-twitter fa-2x"></i>
-            <i style={{color:"white", size:'10px', paddingRight:30}} class="fab fa-instagram fa-2x"></i>
+<Row>
+<Sidebar />
+<Col xl="10" style={{backgroundColor:'white', height:'100%'}}>
+            <div style={{margin: '15px 15px 15px 0px'}}>
+            <Gallery photos={photos} />
+            <Gallery photos={photos2} />
+            <Gallery photos={photos3} />
     </div>
-
-
-</div>
-
-          </Col>
-
-          <Col xl="10" style={{backgroundColor:'white', height:'1000vh'}}>
-          <div style={{margin: '15px 15px 15px 0px'}}>
-          <Gallery photos={photos} />
-          <Gallery photos={photos2} />
-          <Gallery photos={photos3} />
-</div>
-          </Col>
-        </Row>
+            </Col>
+  </Row>
+  
 </body>
         );
     }
